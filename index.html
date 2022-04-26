@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing component</title>
+    
+    <!-- STYLES -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <main class="main-content">
+        <div class="container">
+            <h1 class="main-heading">Our Pricing</h1>
+            <!-- SWITCH -->
+            <form class="pricing-switch" action="https://echo.htmlacademy.ru" metod="GET">
+                <div class="switch">
+                    <input class="switch-input-annual  visually-hidden" type="radio" name="payment_period" value="annual" id="annual-payment-radio">
+                    <input class="switch-input-monthly visually-hidden" type="radio" name="payment_period" value="monthly" id="monthly-payment-radio" checked>
+                    <label class="switch-label switch-label-annual" for="annual-payment-radio">Annual</label>
+                    <div class="switch-control">
+                        <div class="switch-circle"></div>
+                        <label class="switch-control-annual switch-annual" for="annual-payment-radio"></label>
+                        <label class="switch-control-monthly switch-monthly" for="monthly-payment-radio"></label>
+                    </div>
+                    <label class="switch-label switch-label-monthly" for="monthly-payment-radio">Monthly</label>
+                </div>
+            </form>
+
+            <div class="main-info-wrapper">
+                <!-- BASIC -->
+                <div class="main-info">
+                    <h2 class="main-info-heading">Basic</h2>
+                    <div class="main-info-dollar-icon-wrapper">
+                        <span class="main-info-dollar-icon">$</span>
+                        <span class="main-info-dollar-number main-info-dollar-number-one">19.99</span>
+                    </div>
+                    <div class="main-info-text-wrapper">
+                        <span class="main-info-text">500 GB Storage</span>
+                        <span class="main-info-text">2 Users Allowed</span>
+                        <span class="main-info-text info-text-two">Send up to 3 GB</span>
+                        <a class="main-info-link" href="#">Learn more</a>
+                    </div>
+                </div>
+                <!-- PROFESSIONAL -->
+                <div class="main-info info-center">
+                    <h2 class="main-info-heading">Professional</h2>
+                    <div class="main-info-dollar-icon-wrapper icon-senter">
+                        <span class="main-info-dollar-icon">$</span>
+                        <span class="main-info-dollar-number main-info-dollar-number-two">24.99</span>
+                    </div>
+                    <div class="main-info-text-wrapper">
+                        <span class="main-info-text info-text-center">1 TB Storage</span>
+                        <span class="main-info-text info-text-center">5 Users Allowed</span>
+                        <span class="main-info-text info-text-center info-text-two">Send up to 10 GB</span>
+                    </div>
+                    <a class="main-info-link main-link-center" href="#">Learn more</a>
+                </div>
+                <!-- MASTER -->
+                <div class="main-info main-info-right-section">
+                    <h2 class="main-info-heading">Master</h2>
+                    <div class="main-info-dollar-icon-wrapper">
+                        <span class="main-info-dollar-icon">$</span>
+                        <span class="main-info-dollar-number main-info-dollar-number-three">39.99</span>
+                    </div>
+                    <div class="main-info-text-wrapper">
+                        <span class="main-info-text">2 TB Storage</span>
+                        <span class="main-info-text">10 Users Allowed</span>
+                        <span class="main-info-text info-text-two">Send up to 20 GB</span>
+                    </div>
+                    <a class="main-info-link" href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>
